@@ -1,0 +1,20 @@
+{
+    "name": "mrfrost/theme",
+    "description": "Tema custom \u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[DBeberapa tema custom untuk Codeigniter 4",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mrfrost\\Theme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MrFrost-Nv27",
+            "email": "nazruelyourgoodfriend@gmail.com"
+        }
+    ],
+    "require": {
+        "codeigniter4/framework": "^4.2"
+    }
+}

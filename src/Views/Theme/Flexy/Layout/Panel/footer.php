@@ -1,0 +1,1 @@
+All Rights Reserved by Flexy Admin. Designed and Developed by <a href="#!">WrapPixel</a>.
