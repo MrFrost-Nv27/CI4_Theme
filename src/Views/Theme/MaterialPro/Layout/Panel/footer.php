@@ -1,1 +1,1 @@
-© 2021 Material Pro Admin by <a href="#!">wrappixel.com </a>
+All Rights Reserved by Materialpro admin.

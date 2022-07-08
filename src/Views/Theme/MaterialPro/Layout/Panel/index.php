@@ -22,9 +22,10 @@
 
 <body>
     <?= view($config->theme['panel'] . 'preloader') ?>
-    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
-        <header class="topbar" data-navbarbg="skin6">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin1"
+        data-sidebartype="mini-sidebar" data-sidebar-position="fixed" data-header-position="fixed"
+        data-boxed-layout="full" class="mini-sidebar">
+        <header class="topbar" data-navbarbg="skin1">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <?= view($config->theme['panel'] . 'navbar') ?>
             </nav>
@@ -32,13 +33,14 @@
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <?= view($config->theme['panel'] . 'sidebar') ?>
         </aside>
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="display: block;">
             <?= $this->renderSection('main') ?>
             <footer class="footer">
                 <?= view($config->theme['panel'] . 'footer') ?>
             </footer>
         </div>
     </div>
+    <div class="chat-windows hide-chat"></div>
 
     <!-- Assets -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -46,7 +48,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/app.min.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/app.init.js"></script>
     <script src="<?= base_url('assets/materialpro') ?>/js/app-style-switcher.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/sparkline.js"></script>
     <script src="<?= base_url('assets/materialpro') ?>/js/waves.js"></script>
     <script src="<?= base_url('assets/materialpro') ?>/js/sidebarmenu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"
@@ -58,7 +64,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.20/c3.min.js"
         integrity="sha512-+IpCthlNahOuERYUSnKFjzjdKXIbJ/7Dd6xvUp+7bEw0Jp2dg6tluyxLs+zq9BMzZgrLv8886T4cBSqnKiVgUw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="<?= base_url('assets/materialpro') ?>/js/custom.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/feather.min.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/custom.min.js"></script>
+    <script src="<?= base_url('assets/materialpro') ?>/js/apexcharts.min.js"></script>
 </body>
 
 </html>
